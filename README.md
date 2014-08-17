@@ -1,0 +1,4 @@
+emacsd
+======
+
+Emacs configuration files
