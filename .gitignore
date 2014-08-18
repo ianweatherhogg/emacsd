@@ -1,2 +1,14 @@
 # Compiled
 *.elc
+/.cask
+*~
+/backup
+.emacs.desktop
+.emacs.desktop.lock
+/eshell/history
+/eshell/lastdir
+/emacs-cask
+/var
+tramp
+history
+helm-adap*
