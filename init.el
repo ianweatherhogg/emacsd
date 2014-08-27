@@ -61,7 +61,7 @@
   :init (require 'smartparens-config))
 
 (use-package ace-jump-mode
-  :bind (("C-; SPC" . ace-jump-mode)))
+  :bind (("C-;" . ace-jump-mode)))
 
 (use-package powerline
   :init
@@ -196,18 +196,18 @@
                (turn-on-eldoc-mode))))
 
 (use-package magit
-  :bind ("C-x g" . magit-status)
-  :config
-  (progn
-    (require 'magit-svn)
-    (add-hook 'magit-mode-hook 'turn-on-magit-svn)
+  :bind ("C-x g" . magit-status))
+  ;; :config
+  ;; (progn
+  ;;   (require 'magit-svn)
+  ;;   (add-hook 'magit-mode-hook 'turn-on-magit-svn)
 
-    (defun magit-ignore-latex-project ()
-      (interactive)
-      (mapc
-       #'magit-ignore-file
-       (list "*.aux" "*.log" "*.out" "*.bbl" "*.blg" "auto/" "*.synctex.gz" "*.toc"))
-      (magit-refresh))))
+  ;;   (defun magit-ignore-latex-project ()
+  ;;     (interactive)
+  ;;     (mapc
+  ;;      #'magit-ignore-file
+  ;;      (list "*.aux" "*.log" "*.out" "*.bbl" "*.blg" "auto/" "*.synctex.gz" "*.toc"))
+  ;;     (magit-refresh))))
 
 (use-package org
   :bind (("C-c o a" . org-agenda)
@@ -293,7 +293,7 @@
   :diminish guide-key-mode
   :idle
   (progn
-    (setq guide-key/guide-key-sequence '("C-x 4" "C-c h" "C-x c"))
+    (setq guide-key/guide-key-sequence '("C-x 4" "C-c h" "C-x c" "C-x r"))
     (guide-key-mode 1)))
 
 (use-package slime
@@ -377,6 +377,8 @@
  '(blink-cursor-mode nil)
  '(org-agenda-files (quote ("~/Documents/sync/org/")))
  '(org-directory "~/Documents/sync/org")
+ '(scroll-step 1) ;; scroll one row at at time
+ '(scroll-conservatively 10000)
  '(require-final-newline t)
  '(dired-dwim-target t) ;; guesses target when copy/move dired mode
  '(safe-local-variable-values (quote ((encoding . utf-8))))
