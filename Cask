@@ -28,6 +28,7 @@
 (depends-on "zenburn-theme")
 (depends-on "zoom-frm")
 
+(depends-on "git-timemachine")
 (depends-on "twittering-mode")
 (depends-on "smartparens")
 (depends-on "powerline")
