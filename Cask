@@ -52,3 +52,4 @@
 (depends-on "guide-key")
 (depends-on "smartscan")
 (depends-on "ido-at-point")
+(depends-on "clojure-mode")

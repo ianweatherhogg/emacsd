@@ -359,6 +359,8 @@
     (setq eshell-history-size 5000)
     (setq eshell-save-history-on-exit t)))
 
+(use-package clojure-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
