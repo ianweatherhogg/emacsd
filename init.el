@@ -372,7 +372,11 @@
  '(browse-url-generic-program "chromium")
  '(custom-enabled-themes (quote (tango-plus)))
  '(custom-safe-themes (quote ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "f5e9f66da69f504cb61aacedeb8284d8f38f2e6f835fd658cac5f0ad5d924549" default)))
+ ;;http://truongtx.me/2013/04/24/dired-as-default-file-manager-2-basic-tips/
+ '(dired-dwim-target t) ;; guesses target when copy/move dired mode
  '(delete-by-moving-to-trash t)
+ '(dired-recursive-deletes 'always)
+ '(dired-recursive-copies 'always)
  '(electric-pair-mode nil)
  '(history-length 10000)
  '(indent-tabs-mode nil)
@@ -382,7 +386,6 @@
  '(scroll-step 1) ;; scroll one row at at time
  '(scroll-conservatively 10000)
  '(require-final-newline t)
- '(dired-dwim-target t) ;; guesses target when copy/move dired mode
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(sentence-end-double-space nil))
 (custom-set-faces
