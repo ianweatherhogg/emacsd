@@ -379,6 +379,8 @@
  '(dired-recursive-copies 'always)
  '(electric-pair-mode nil)
  '(history-length 10000)
+ ;;http://stackoverflow.com/questions/2627289/how-to-replace-a-region-in-emacs-with-yank-buffer-contents
+ '(delete-selection-mode 1)
  '(indent-tabs-mode nil)
  '(blink-cursor-mode nil)
  '(org-agenda-files (quote ("~/Documents/sync/org/")))
