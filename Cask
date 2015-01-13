@@ -54,3 +54,5 @@
 (depends-on "ido-at-point")
 (depends-on "clojure-mode")
 (depends-on "auctex")
+(depends-on "help+")
+(depends-on "help-fns+")
